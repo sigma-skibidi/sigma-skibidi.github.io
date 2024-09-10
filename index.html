@@ -1,11 +1,14 @@
 <head>
   <script>
+    function randChoice(arr) {
+      return arr[Math.floor(Math.random() * arr.length)]
+    }
     let text = "https://rizzzz.vercel.app/ https://rizzz-zeta.vercel.app/ https://goonery.vercel.app/ https://goon-accessor.vercel.app/ https://zestimate.vercel.app/ https://valorant-lake.vercel.app/ https://cypher-from-valorant.vercel.app/ https://cypher-psi.vercel.app/ https://fortnitebalz.vercel.app/ https://balz-bay.vercel.app/ https://hello-rw62.vercel.app/ https://hello-9ham.vercel.app/ https://skibidi-toilet-murex.vercel.app/"
     const myArray = text.split(" ");
     async function load_home(){
       hey.innerHTML = await (await fetch(randChoice(myArray))).text();
     }
-    load_home()
+    load_home();
   </script>
 </head>
 <body>
