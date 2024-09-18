@@ -38,7 +38,7 @@ function newSite() {
                 'https://rizz-rizz-rizz.vercel.app/',
                 'https://gyatt-gyatt-gyatt.vercel.app/']
 
-    document.getElementById('myIframe').src = sites[Math.floor(Math.random() * sites.length)] + x;
+    document.getElementById('myIframe').src = sites[Math.floor(Math.random() * sites.length)] + "proxy/" + x;
 }    
 </script>
 <input type="button" value="Change site" onClick="newSite()" />
